@@ -14,6 +14,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Scope;
+import java.util.logging.Logger;
 
 @SpringBootApplication
 @Log4j2
@@ -21,7 +22,7 @@ public class QEatsApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(QEatsApplication.class, args);
-
+    final Logger log = Logger.getLogger(QEatsApplication.class.getName());
     // TIP:MODULE_RESTAPI: If your server starts successfully,
     // you can find the following message in the logs.
     log.info("Congrats! Your QEatsApplication server has started");
