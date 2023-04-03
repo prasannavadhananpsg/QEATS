@@ -40,7 +40,6 @@ public class RestaurantController {
   public static final String CART_CLEAR_API = "/cart/clear";
   public static final String POST_ORDER_API = "/order";
   public static final String GET_ORDERS_API = "/orders";
-   
   @Autowired
   private RestaurantService restaurantService;
 

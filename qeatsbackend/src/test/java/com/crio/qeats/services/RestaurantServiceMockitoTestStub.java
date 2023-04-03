@@ -96,9 +96,6 @@ public class RestaurantServiceMockitoTestStub {
     List<Restaurant> restaurantList1 = null;
     List<Restaurant> restaurantList2 = null;
 
-    // TODO: CRIO_TASK_MODULE_MOCKITO
-    //  Initialize these two lists above such that I will match with the assert statements
-    //  defined below.
 
 
     lenient().doReturn(restaurantList1)
