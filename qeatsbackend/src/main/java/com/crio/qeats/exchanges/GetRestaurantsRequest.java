@@ -33,7 +33,11 @@ public class GetRestaurantsRequest {
   @Min(value = -180)
   @Max(value = 180)
   private Double longitude;
-  public Double getLatitude() {
+  public GetRestaurantsRequest(double d, double e) {
+    latitude = d;
+    longitude = e;
+  }
+public Double getLatitude() {
     return latitude;
   }
   public void setLatitude(Double latitude) {

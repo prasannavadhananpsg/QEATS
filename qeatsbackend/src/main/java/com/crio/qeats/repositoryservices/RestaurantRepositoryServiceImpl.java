@@ -54,7 +54,7 @@ public class RestaurantRepositoryServiceImpl implements RestaurantRepositoryServ
 
   private boolean isOpenNow(LocalTime time, RestaurantEntity res) {
     LocalTime openingTime = LocalTime.parse(res.getOpensAt());
-    LocalTime closingTime = LocalTime.parse(res.getClosesAt());
+    LocalTime closingTime = LocalTime.parse((CharSequence)res.getClosesAt());
 
     return time.isAfter(openingTime) && time.isBefore(closingTime);
   }

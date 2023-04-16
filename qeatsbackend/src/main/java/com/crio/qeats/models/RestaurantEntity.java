@@ -50,5 +50,21 @@ public class RestaurantEntity {
   @NotNull
   private List<String> attributes = new ArrayList<>();
 
+public CharSequence getOpensAt() {
+    return opensAt;
+}
+
+public Object getClosesAt() {
+    return closesAt;
+}
+
+public double getLatitude() {
+    return latitude;
+}
+
+public double getLongitude() {
+    return longitude;
+}
+
 }
 

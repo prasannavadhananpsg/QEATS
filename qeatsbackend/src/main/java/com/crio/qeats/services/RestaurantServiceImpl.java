@@ -53,7 +53,7 @@ public class RestaurantServiceImpl implements RestaurantService {
             currentTime, normalHoursServingRadiusInKms);
         }
         GetRestaurantsResponse response = new GetRestaurantsResponse(restaurant);
-        log.info(response);
+       // log.info(response);
         return response;
   }
 
